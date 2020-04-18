@@ -1,8 +1,7 @@
 ## Padilla Land
 
-You can use the [editor on GitHub](https://github.com/APadilla7373/Padilla-Land/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Here is where I'm testing my codes.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
@@ -11,12 +10,14 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
+# Code
+- HTML
+- CSS
+- Javascript
+- JQuery
+## Multimedia
+- Video Editing
+- 3D Animation
 
 1. Numbered
 2. List
