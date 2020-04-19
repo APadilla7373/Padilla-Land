@@ -47,21 +47,10 @@
             <script>
 
 
-                $("#fader").click(function() {
-
-                $("p").fadeOut("slow", function() {
-                
-                    alert("FadeOut complet!")
-                });
-
-                // can use slow or fast in place of millisecond numbers
-
-                });
-
-                $("#faderIn").click(function() {
-
-                $("p").fadeIn("fast");
-
+                $.get("index.html", function (data) {
+                    
+                    alert(data);
+                    
                 });
 
             </script>
