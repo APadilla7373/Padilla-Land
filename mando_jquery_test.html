@@ -38,15 +38,13 @@
 
 
             <script>
-                 $.get("index.html", function (data) {
-                 alert(data);
-                    
-                });
+
                 
                 $.ajax({
                     url:"index.html"
                 });done(function(data) {
-                    alert(data);
+                    //alert(data);
+                    $("h1").html(data);
                 });
 
             </script>
