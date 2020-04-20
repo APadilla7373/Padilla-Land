@@ -37,7 +37,11 @@
             height:50px;
                 margin-left:200px;
                 width:100px;
+            }
             
+            #error {
+                color:red;
+                margin:20px;
             }
         </style>
 
@@ -47,6 +51,8 @@
 
         <div id="wrapper">
             
+        <div id="error"></div>
+
             <form id="validationForm">
             
             <label for="email">Email</label>
@@ -78,7 +84,7 @@
     };
                 
             if (!isValidEmailAddress($("#email").val())) {
-                alert("not valid");
+                $("#error").html("Please enter a valid email address");
             }
             });
 
