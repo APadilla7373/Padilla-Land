@@ -59,7 +59,7 @@
             <input name="email" id="email"/>
             
             <label for="phone">Telephone</label>
-            <input name="phone" />
+            <input name="phone" id="phone" />
 
             <label for="pass">Password</label>
             <input name="pass" type="password"/>
@@ -76,7 +76,10 @@
         <script>
             
             $("#validationForm").submit(function(event) {
-                event.preventDefault();
+            
+            var errorMessage="";
+                
+            event.preventDefault();
                 
     function isValidEmailAddress(emailAddress) {
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
@@ -84,8 +87,15 @@
     };
                 
             if (!isValidEmailAddress($("#email").val())) {
-                $("#error").html("Please enter a valid email address");
+                errorMessage="Please enter a valid email address";
             }
+                
+            if (!$.isNumeric($("#phone").val())) {
+                errorMessage="Please enter a valid phone number";
+            }
+                
+                $("#error").hmtl(errorMessage);
+                
             });
 
         </script>
