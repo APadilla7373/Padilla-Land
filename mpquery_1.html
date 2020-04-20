@@ -61,10 +61,10 @@
             <input name="phone" id="phone" />
 
             <label for="pass">Password</label>
-            <input name="pass" type="password"/>
+            <input name="pass" type="password" id="pass1"/>
             
             <label for="pass">Confirm Password</label>
-            <input name="pass" type="password"/>
+            <input name="pass" type="password"id="pass2"/>
             
             <input id="submitButton" type="submit" value="Submit">
             
@@ -86,11 +86,20 @@
     };
                 
             if (!isValidEmailAddress($("#email").val())) {
-                errorMessage="Please enter a valid email address";
+                errorMessage="<br />Please enter a valid email address";
             }
                 
+                if (!$.isNumeric($("#phone").val())) {
+                errorMessage="<br />Please enter a valid phone";
+            }
                 
+                if ($(#pass1).val()!=$(#"pass2").val())) {
+                errorMessage="<br />Please enter matching passwords";
+            }
 
+                if (errorMessage=="") {
+                    alert("Success!");
+                    }
                 
                 $("#error").hmtl(errorMessage);
                 
