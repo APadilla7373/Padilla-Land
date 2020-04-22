@@ -1,13 +1,12 @@
 <!DOCTYPE hmtl>
     <hmtl>
-
-        
         <head>
             <title> Learning Javascript</title>
             <meta charset="utf-8"/>
             <meta http-equiv="Content-type" content="text/html"; charset=utf-8 />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <script type="text/javascript" src="https://apadilla7373.github.io/Padilla-Land/jquery-3.5.0.min.js"></script>
+            <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+
             <style>
 
                 body {
@@ -26,25 +25,27 @@
 
                 }
 
-                
-                
-                
                 #logo {
-                    padding: 4px 0 0 20px;
+                    padding: 5px 0 0 20px;
                     font-weight: bold;
                     font-size: 120%;
                     float: left;
                 }
-                
-                    #logo2 {
+
+                #logo2 {
                     padding: 12px 20px 10px;
                     font-size: 75%;
                     float: left;
                 }
 
+
                 #buttonDiv {
                     float: right;
                     padding:5px 10px 0 0;
+                }
+
+                #runButton {
+                    font-size: 120%;
                 }
 
                 #toggles {
@@ -63,7 +64,6 @@
                     padding:4px 7px;
                 }
 
-                
 
                 .clear {
                     clear:both;
@@ -114,7 +114,6 @@
 
                 }
 
-                
             </style>
 
         </head>
@@ -123,7 +122,9 @@
             <div id="wrapper">
 
                 <div id="menuBar">
-                    <div id="logo">Note Pad:</div><div id="logo2">Written in HTML, CSS & Javascript</div>
+                <div id="logo">Note Pad</div><div id="logo2">Written in HTML, CSS & Javascript</div>
+
+                <div id="buttonDiv"><button id="runButton">Run</button></div>
 
                 <ul id="toggles">
 
@@ -139,16 +140,15 @@
 
             <div class="codeContainer" id="Notes-1Container">
 
-                    <div class="codeLabel">1</div>
+                    <div class="codeLabel">Notes-1</div>
 
                     <textarea id="htmlCode">Type here</textarea>
 
-               
                 </div>
 
                 <div class="codeContainer" id="Notes-2Container">
 
-                    <div class="codeLabel">2</div>
+                    <div class="codeLabel"></div>
 
                     <textarea id="Notes-2Code">Type here</textarea>
 
@@ -156,7 +156,7 @@
 
                 <div class="codeContainer" id="Notes-3Container">
 
-                    <div class="codeLabel">3</div>
+                    <div class="codeLabel"></div>
 
                     <textarea id="Notes-3Code">Type Here</textarea>
 
@@ -164,13 +164,15 @@
 
                 <div class="codeContainer" id="Notes-4Container">
 
-                    <div class="codeLabel">4</div>
+                    <div class="codeLabel"></div>
 
                     <textarea id="Notes-4Code">Type Here</textarea>
 
                 </div>
 
             </div>
+
+
 
 
             <script>
@@ -193,6 +195,7 @@
             });
 
             </script>
+
 
         </body>
 
